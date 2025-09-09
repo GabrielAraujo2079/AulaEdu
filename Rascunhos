@@ -1,0 +1,31 @@
+
+let aluno = {
+    nome: "Gabriel",
+    nota: 7.8,
+    faltas: 2
+}
+console.log(aluno);
+console.log(aluno.nome);
+console.log(aluno.nota);
+console.log(aluno.faltas); */
+
+type Aluno = {
+    nome: string;
+    nota: number;
+    faltas: number;
+}; 
+
+
+let aluno1: Aluno = {
+    nome: "Joao",
+    nota: 7.5,
+    faltas: 1
+
+}
+
+
+interface Aluno {
+    nome: string;
+    nota: number;
+    faltas: number;
+} 

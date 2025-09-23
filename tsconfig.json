@@ -1,11 +1,6 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
+  
   "compilerOptions": {
-    // File Layout
-    // Removi rootDir/outDir porque seus arquivos estão em LABS, não em 'ts'
-    // Se quiser usar rootDir/outDir, mova seus arquivos TypeScript para a pasta 'ts'
-    // "rootDir": "./LABS",
-    // "outDir": "./js",
 
     // Environment Settings
     "module": "CommonJS",
@@ -14,16 +9,16 @@
     "types": ["node"],
     "lib": ["ES2020"],
 
-    // Other Outputs
+    
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
 
-    // Stricter Typechecking Options
+ 
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
 
-    // Recommended Options
+
     "strict": true,
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
@@ -33,8 +28,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true
   },
-  // Inclui todos os arquivos .ts dentro da pasta LABS
+
   "include": ["Labs/**/*.ts"],
-  // Exclui a pasta 'js' da compilação (se você usar outDir)
   "exclude": ["js"]
 }
